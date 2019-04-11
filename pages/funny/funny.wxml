@@ -1,0 +1,24 @@
+<!--pages/funny/funny.wxml-->
+<view class="main-table">
+    <view class="main-cell" wx:for="{{ lists }}">
+        <view class="header">
+            <image src="{{ item.profile_image }}" class="avatar"></image>
+            <text class="username">{{ item.name }}</text>
+        </view>
+
+        <view class="content">
+            <text class="text">{{ item.text }}</text>
+        </view>
+
+        <view class="bottom" wx:if="{{ item.top_cmt[0] }}">
+            <image src="/images/shen.png" class="shen"></image>
+            <view class="top-area">
+                <image src="{{ item.top_cmt[0].user.profile_image }}" class="avatar"></image>
+                <text class="username">{{ item.top_cmt[0].user.username }}</text>
+            </view>
+            <text class="content">{{ item.top_cmt[0].content }}</text>
+        </view>
+    </view>
+</view>
+
+<tabbar sIndex="1"></tabbar>

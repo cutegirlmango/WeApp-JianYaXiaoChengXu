@@ -1,0 +1,41 @@
+/* pages/funny/funny.wxss */
+
+.bottom {
+    border-top: 1rpx solid #f5f5f5;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    padding: 0 20rpx 20rpx;
+
+    position: relative;
+}
+
+.bottom .top-area {
+
+    height: 100rpx;
+
+    display: flex;
+    align-items: center;
+}
+
+.bottom .top-area .avatar {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+
+    margin-right: 20rpx;
+}
+
+.bottom .top-area .username {
+    font-size: 25rpx;
+}
+
+.bottom .shen {
+    width: 50rpx;
+    height: 50rpx;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}

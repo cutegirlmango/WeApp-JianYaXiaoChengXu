@@ -1,0 +1,3 @@
+<!--pages/game/game/game.wxml-->
+<web-view src="http://h.4399.com/play/{{ id }}.htm">
+</web-view>

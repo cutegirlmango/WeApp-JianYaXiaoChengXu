@@ -1,0 +1,50 @@
+/* pages/game/list/list.wxss */
+.game-cell {
+    width: 90vw;
+    height: 150rpx;
+    margin: 40rpx 5vw;
+
+    border-radius: 20rpx;
+
+    background: white;
+}
+
+.game-cell, .game-cell .left, .game-cell .right {
+    display: flex;
+    align-items: center;
+} 
+
+.game-cell .left {
+    flex: 1;
+}
+
+.game-cell .left image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 20rpx;
+
+    margin: 0 20rpx;
+}
+
+.game-cell .left .content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content .title {
+    font-size: 35rpx;
+}
+
+.content .detail {
+    font-size: 25rpx;
+    color: gray;
+    padding: 10rpx 0;
+}
+
+.game-cell .right {
+    width: 100rpx;
+}
+

@@ -1,0 +1,21 @@
+/* pages/video/video.wxss */
+
+.main-cell .bottom {
+  height: 60rpx;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-cell .bottom .icon {
+    width: 40rpx;
+    height: 40rpx;
+
+    margin-right: 20rpx;
+}
+
+.main-cell .bottom .text {
+  font-size: 25rpx;
+  color: lightgray;
+}

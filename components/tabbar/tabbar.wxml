@@ -1,0 +1,6 @@
+<!--tabbar.wxml-->
+<view class="tab-bar">
+    <view class="item" wx:for="{{ list }}" data-index="{{ index }}" bindtap="select">
+        <image src="{{ index == sIndex ? item.selectedIcon : item.icon }}" mode="heightFit" class="{{ index == sIndex ? 'swing' : '' }}"></image>
+    </view>
+</view>

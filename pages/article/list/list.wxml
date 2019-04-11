@@ -1,0 +1,11 @@
+<!--pages/article/list/list.wxml-->
+<view class="collection-view">
+    <view class="item add-item" bindtap="add">
+        <image src="/images/article_s.png"></image>
+        <text>写日记</text>
+    </view>
+    <view class="item">
+    </view>
+</view>
+
+<tabbar sIndex="4"></tabbar>
