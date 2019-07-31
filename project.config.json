@@ -1,4 +1,6 @@
 {
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
 	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
@@ -14,11 +16,13 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.4.4",
 	"appid": "wxc025d5c5dfb46d99",
-	"projectname": "%E5%87%8F%E5%8E%8B",
+	"projectname": "WeApp-JianYaXiaoChengXu",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,13 +32,25 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "测试文章详情页面",
+					"pathName": "pages/article/detail/detail",
+					"query": "id=f4b905395ce3d96302df8b4107de4765",
+					"scene": null
+				}
+			]
 		}
 	}
 }

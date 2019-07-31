@@ -1,0 +1,22 @@
+<!--pages/video/video.wxml-->
+<view class="main-table">
+    <view class="main-cell" wx:for="{{ lists }}">
+        <view class="header">
+            <image src="{{ item.profile_image }}" class="avatar"></image>
+            <text class="username">{{ item.name }}</text>
+        </view>
+
+        <view class="content">
+            <video wx:if="{{ item.playing }}" class="video" id="video{{ index }}"  src="{{ item.videouri }}"  autoplay="{{ false }}"></video>
+            <image wx:if="{{ !item.playing }}" class="video" src="{{ item.profile_image }}" bindtap="StartPlay" data-id="{{ index }}"></image>
+            <text class="text">{{ item.text }}</text>
+        </view>
+
+        <view class="bottom">
+            <image src="/images/player.png" class="icon"></image>
+            <text class="text">{{ item.playcount }}</text>
+        </view>
+    </view>
+</view>
+
+<tabbar sIndex="0"></tabbar>

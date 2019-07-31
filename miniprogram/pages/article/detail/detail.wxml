@@ -1,0 +1,13 @@
+<!--pages/article/detail/detail.wxml-->
+<view class="container">
+    <image src="{{ item.image }}" class="image" wx:if="{{ item.image }}" mode="widthFix"></image>
+    <text>{{ item.content }}</text>
+</view>
+
+<navigator url="/pages/article/add/add?id={{ item._id }}">
+    <view class="edit btn">编辑</view>
+</navigator>
+
+<view class="del btn" bindtap="del">删除</view>
+
+

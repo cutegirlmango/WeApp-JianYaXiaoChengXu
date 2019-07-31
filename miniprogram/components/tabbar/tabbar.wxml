@@ -1,0 +1,13 @@
+<!--tabbar.wxml-->
+<view class="tab-bar">
+    <view class="item" wx:for="{{ list }}" data-index="{{ index }}" bindtap="select">
+        <block wx:if="{{ sIndex == 2 && index == 2 }}">
+            <!-- 音乐播放 单独处理 -->
+            <image src="/images/{{ isPlaying ? 'pause' : 'play' }}.png" mode="heightFit"></image>
+        </block>
+
+        <block wx:else>
+            <image src="{{ index == sIndex ? item.selectedIcon : item.icon }}" mode="heightFit" class="{{ index == sIndex ? 'swing' : '' }}"></image>            
+        </block>     
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="cover" bindtap="select">
+    <block wx:if="{{ image }}">
+        <image class="upload" src="{{ image }}" mode="aspectFill"></image>
+    </block>
+
+    <block wx:else>
+        <image class="select" src="/images/photo.png"></image>
+    </block>        
+</view>
+
+<textarea class="" value="{{ content }}" placeholder="写点什么"
+     maxlength="-1" auto-focus="false" 
+    bindinput="input" bindfocus="" bindblur="">
+    
+</textarea>
+
+<view class="publish" bindtap="confirm">完成</view>
+  

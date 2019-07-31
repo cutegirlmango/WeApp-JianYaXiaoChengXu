@@ -1,0 +1,24 @@
+<!--pages/article/list/list.wxml-->
+<view class="collection-view" wx:if="{{ isLogin }}">
+    <view class="item add-item" bindtap="add">
+        <image src="/images/article_s.png"></image>
+    </view>
+    
+    <block wx:for="{{ lists }}">
+        <navigator url="/pages/article/detail/detail?id={{ item._id }}">
+            <view class="item">
+                <image class="cover" src="{{ item.image }}" mode="aspectFill"></image>
+                <text>{{ item.content }}</text>
+            </view>
+        </navigator>
+    </block>
+
+    <view class="block" style="width:100%;height:150rpx"></view>
+
+</view>
+
+<view class="login" wx:else>
+    <button type="primary" open-type="getUserInfo" bindgetuserinfo="login">登录</button>
+</view>
+
+<tabbar sIndex="4"></tabbar>
